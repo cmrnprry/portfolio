@@ -27,7 +27,8 @@ class App extends Component {
       <HashRouter basename='/'>
         <div>
           <Switch>
-            <Route exact path='/portfolio' component={Index} />
+            <Route exact path='/' component={Index} />
+            <Route path="/portfolio" component={Index} exact={true} />
 
             {/* Narrative */}
             <Route path="/home" component={Home} exact={true} />
