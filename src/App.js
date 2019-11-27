@@ -43,9 +43,9 @@ class App extends Component {
 
             {/* Programming */}
             <Route path="/index" component={Index} exact={true} />
-            <Route path="/portfolio/about" component={About} exact={true} />
-            <Route path="/portfolio/contact" component={Contact} exact={true} />
-            <Route path="/portfolio/programming-resume" component={Programming_Resume} exact={true} />
+            <Route path="/about" component={About} exact={true} />
+            <Route path="/contact" component={Contact} exact={true} />
+            <Route path="/programming-resume" component={Programming_Resume} exact={true} />
             <Route path="/absolute-unit" component={Absolute_Unit} exact={true} />
             <Route path="/queen-of-swords" component={Queen_of_Swords} exact={true} />
             <Route path="/alice-eclia" component={Alice_ecliA} exact={true} />
