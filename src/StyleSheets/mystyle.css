@@ -1,0 +1,341 @@
+  /* Remove Browser Defaults*/
+  body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+    margin: 0; padding: 0; border: 0;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    background-color: #F9F1EA!important; /*Background color*/
+  }
+
+  iframe{
+    display: block; 
+    margin: auto;
+  }
+
+  img{
+    display: block; 
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*for game jolt logo*/
+  .downloadlink {
+    width: 90%;
+    height: 90%;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+  }
+
+  .downloadlink:hover {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*for GGJ logo*/
+  .downloadlinkGGJ {
+    width: 45%;
+    height: 45%;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+  }
+
+  .downloadlinkGGJ:hover {
+    width: 60%;
+    height: 60%;
+  }
+
+  .video-responsive{
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+  }
+
+  .video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+  #Fill{}
+  /* Flex-Wrapper for Page */
+  .fill-height {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Title Text*/
+  #Title {
+    text-align: center;
+    text-shadow: -2px 1px #636363;
+    color: white; /*Color for the header text*/
+    font-family: "Oswald";
+  }
+
+  .titleText {
+    letter-spacing: 3px;
+    font-size: 85px
+  }
+
+  .subtext{
+    font-size: 40px
+  }
+
+  /* navigation bar */  
+  .col-sm-3{
+      text-align: center;
+  }
+  .col-xs-12 {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #9761b6 /* Color for the rows*/
+  }
+
+  #menu {}
+
+  .menu {
+  }
+  .menu a {
+    font-family: "Oswald";
+    text-decoration: none;
+    color: white; /*nav bar text color*/
+  }
+
+  .menu a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  #Grid{}
+  /* Row */
+  .row {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* PROJECTS */
+
+    /* holder for the img and desc */
+    .gallery {
+      margin: 10px;
+      float: left;
+      width: 300px;
+    }
+    .gallery a{ 
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      border: 4px solid black;
+      height: auto;
+    }
+
+    /* img within the border */
+    .gallery img {
+      width: 100%;
+      height: 251px;  
+    }
+
+    /* hover over container */
+    .gallery a:hover {
+      border: 4px solid white;
+      text-decoration: none!important;
+    }
+
+    .overlay {
+      position: absolute;
+      height: 251px;
+      width: 292px;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #6b64b8;
+    }
+
+    .gallery:hover .overlay {
+      opacity: .80;
+    }
+
+    .hovertitle {
+      display: inline-block;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      vertical-align: middle;
+      font-family: "Raleway";
+    }
+
+    /* text that appears on hover*/
+    .hovertext {
+      display: inline-block;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: middle;
+      font-family: "Raleway";
+    }
+
+  /* about page formatting */
+  #AboutPage{
+    color: white;
+  }
+
+  .format img {
+    height: 60%; 
+    width: 60%; 
+    padding-bottom: 20px;
+  }
+
+  .format h1 {
+    font-family: "Oswald";
+    letter-spacing: 3px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 25px;
+    text-shadow: -2px 1px #636363;
+  }
+
+  .format p {
+    font-family: "Raleway";
+    font-size: 20px;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+  }
+
+
+  #FormatProjectPage{
+    color: white; /*Text color*/
+    font-family: "Raleway";
+    font-size: 30px;
+    text-align: center;
+  }
+    .header h1 {
+      font-family: "Oswald"!important;
+      text-shadow: -2px 1px #636363
+    }
+    .header h2 {
+      font-size: 20px!important;
+    }
+    .caption {
+      font-size: 15px!important;
+      padding: 10px;
+    }
+    .text {
+      font-size: 20px!important;
+      word-spacing: 1px;
+      line-height: 1.5;
+      padding-bottom: 10px;
+    }
+    .bodytext {
+      font-size: 20px!important;
+      text-align: justify!important;
+      word-spacing: 1px;
+      line-height: 1.5;
+      padding-bottom: 10px;
+    }
+
+  #Contact{
+    color: white;
+    text-decoration: none;
+  }
+
+  .h2{
+    text-align: center; 
+    font-family: "Oswald";
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
+  .contactLinks {
+    font-size:64px; 
+    padding: 10px;
+    font-size:64px; 
+  }
+  .contactLinks a {
+    text-decoration: none; 
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

@@ -1,0 +1,95 @@
+.resume-text {
+    text-align: center; 
+    font-family: Oswald; 
+    color: white
+}
+
+.resumeLink {
+    color: #FFFFFF; 
+    text-decoration: underline;
+}
+
+.contactLink {
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+
+.Projects {
+    font-family: Raleway; 
+    font-size: 40px; 
+    text-align: center; 
+    color: white
+}
+
+.hover-padding {
+    padding-top: 25px;
+}
+
+.hover-padding2 {
+    padding-top: 50px;
+}
+
+.hover-padding3 {
+    padding-top: 70px;
+}
+
+.width-100 {
+    width:100%;
+}
+
+.width-50 {
+    width:50%;
+}
+
+.padding-slides {
+    padding-top: 10px;
+}
+
+.trailer {
+    height: 100%; 
+    width: 100%; 
+    padding-top: 25px
+}
+
+.about-making {
+    padding-top: 15px; 
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+.about-game {
+    padding-top: 15px; 
+}
+
+.download {
+    padding: 20px;
+}
+
+.padding4 {
+    padding-bottom: 10px;
+}
+
+.padding5 {
+    padding-bottom: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
