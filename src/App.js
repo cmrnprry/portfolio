@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Index from './Programming/Index'
@@ -24,7 +24,7 @@ import DL from './Narrative/DL';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter basename='/'>
         <div>
           <Switch>
             <Route exact path='/' component={Index} />
@@ -51,7 +51,7 @@ class App extends Component {
             <Route path="/card-crossed-lovers" component={Card_Crossed_Lovers} exact={true} />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
