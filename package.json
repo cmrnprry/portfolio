@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cmrnprry.github.io/portfolio/",
+  "homepage": "https://cmrnprry.github.io/portfolio/",
   "dependencies": {
     "bootstrap": "^4.4.0",
     "gh-pages": "^2.1.1",
