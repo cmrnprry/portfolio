@@ -82,6 +82,7 @@ class CCL extends Component {
                     <h1>Contributions</h1>
                     <div class="text">Implemented all art assets</div>
                     <div class="text">Created particle effects for scene changes</div>
+                    <div class="text">Proof read the script</div>
                     <div class="text">Implemented UI/UX</div>
                     <div class="text">Wrote information about each Tarot card</div>
                   </section>
@@ -92,7 +93,7 @@ class CCL extends Component {
                   <section id="FormatProjectPage" class="header">
                     <h1>About the Process</h1>
                     <div class="bodytext about-making">
-                      Card Crossed Lovers was made in a week during a game jam hosted by the Northeastern Game Dev Club (of which I am an EBord member) and the Emerson Game Dev Club.
+                      Card Crossed Lovers was made in a week during a game jam hosted by the Northeastern Game Dev Club (of which I am an EBord member) and the Emerson Game Dev Club. I worked mainly as a programmer, but was able write about the tarot and proofread the game's script. The game is currently still in development and will be updated periodically as the team has time.
               </div>
                   </section>
                 </div>
