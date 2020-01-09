@@ -40,9 +40,9 @@ class AliceecliA extends Component {
                 {/* <!-- Trailer --> */}
                 <div class="col-xs-12 col-sm-6">
                   <div style={{ width: 'auto', height: 'auto', paddingTop: '50px'}}>
-                    <ResponsiveEmbed aspectRatio="16by9">
-                      <embed src={trailer} type="video/mp4" />
-                    </ResponsiveEmbed>
+                  <video width="100%" height="auto" controls>
+                    <source src={trailer} type="video/mp4" />
+                  </video>
                   </div>
                   <section id="FormatProjectPage" class="caption padding-slides" align="center">
                     Original Sound Design and Music by <a href="https://www.daynamooney.com/" target="_blank" rel ="noopener noreferrer" class="resumeLink">
@@ -71,8 +71,6 @@ class AliceecliA extends Component {
                     <div class="text">Narrative Design</div>
                     <div class="text">Game Writing</div>
                     <div class="text">Programming</div>
-                    <div class="text">Background Art</div>
-                    <div class="text">Animation</div>
                   </section>
                 </div>
 
