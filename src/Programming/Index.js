@@ -53,11 +53,9 @@ class Home extends Component {
                         <div class="overlay">
                           <div class="hovertitle hover-padding"><b>Alice ecilA</b></div>
                           <div class="hovertext">
-                            Narrative Design <br />
-                            Game Writing <br />
                             Programming <br />
-                            Background Art <br />
-                            Animation
+                            Game Writing <br />
+                            Narrative Design<br />
                           </div>
                         </div>
                       </a>

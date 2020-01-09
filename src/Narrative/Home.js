@@ -57,8 +57,6 @@ class Home extends Component {
                             Narrative Design <br />
                             Game Writing <br />
                             Programming <br />
-                            Background Art <br />
-                            Animation
                           </div>
                         </div>
                       </a>
@@ -73,9 +71,9 @@ class Home extends Component {
                         <div class="overlay">
                           <div class="hovertitle hover-padding2"><b>Absolute Unit</b></div>
                           <div class="hovertext">
+                            Game Writing <br />
                             Programming <br />
-                            Game Design <br />
-                            Game Writing
+                            Game Design                            
                           </div>
                         </div>
                       </a>
