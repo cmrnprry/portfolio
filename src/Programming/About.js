@@ -56,7 +56,7 @@ class AboutMe extends Component {
             
                   <div class="col-xs-12">
                     <p>
-                      I was lucky enough to intern at Disruptor Beam this past summer as an engineering intern. While there I worked on Player Support Tools, hooking up the UI/UX art to the game and programming in gameplay elements. I worked on two games, one was Archer: Danger Phone and I can't talk about he other... Yet. In addtion to my internship, I have worked on a variety of games both in and out school. You can see more about them on the <a href="home" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>"Projects"</a> section of the page.
+                      I was lucky enough to intern at Disruptor Beam this past summer as an engineering intern. While there I worked on Player Support Tools, hooking up the UI/UX art to the game and programming in gameplay elements. I worked on two games, one was Archer: Danger Phone and I can't talk about he other... Yet. In addtion to my internship, I have worked on a variety of games both in and out school. You can see more about them on the <a href="index" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>"Projects"</a> section of the page.
                     </p>
 
                     <p class="padding4">
