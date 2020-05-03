@@ -20,7 +20,7 @@ class Absolute_Unit extends Component {
   render() {
 
     return (
-      <Container style={{ maxWidth: '1500px' }}>
+      <Container style={{ maxWidth: '1300px' }}>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Absolute Unit</title>
