@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/container'
+import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import { Helmet } from "react-helmet"
