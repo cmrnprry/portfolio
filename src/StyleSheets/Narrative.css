@@ -15,10 +15,11 @@
 }
 
 .Projects {
-    font-family: Raleway; 
-    font-size: 40px; 
+    font-family: Raleway-Bold; 
+    font-size: 55px; 
     text-align: center; 
-    color: white
+    color: white;
+    padding: 15px;
 }
 
 .hover-padding {
@@ -58,7 +59,7 @@
 }
 
 .about-game {
-    padding-top: 15px; 
+    padding-top: 30px; 
 }
 
 .download {

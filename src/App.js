@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as HashRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Switch, Route } from 'react-router-dom';
+
+//CSS Imports
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './StyleSheets/mystyle.css';
+import './StyleSheets/Narrative.css';
 
 import Index from './Programming/Index'
 import About from './Programming/About';

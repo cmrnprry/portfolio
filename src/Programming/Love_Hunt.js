@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
 import Carousel from 'react-bootstrap/Carousel'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../StyleSheets/Narrative.css'
-import '../StyleSheets/mystyle.css'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/container'
+import Card from 'react-bootstrap/Card'
+import CardDeck from 'react-bootstrap/CardDeck'
+import { Helmet } from "react-helmet"
+
 import NavBar from './Nav_Programming'
 import Footer from '../Both/Footer'
 import five from '../Images/LH/LH_screencap_five.PNG';
@@ -17,138 +21,158 @@ class Love_Hunt extends Component {
   render() {
 
     return (
-      <html>
-        <head>
+      <Container style={{ maxWidth: '1500px' }}>
+        <Helmet>
+          <meta charSet="utf-8" />
           <title>Love Hunt</title>
-          <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' />
-          <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
-          <link rel="stylesheet" type="text/css" href="mystyle.css" />
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
+        </Helmet>
 
-        <body>
-          <div class="container">
-            <NavBar />
-            <div class="row">
-              <div class="col-xs-12">
-                {/* <!-- Start Page --> */}
-                <section id="FormatProjectPage" class="header">
-                  <h1>Love Hunt</h1>
-                </section>
+        <NavBar />
 
-                {/* <!-- Trailer --> */}
-                <div class="col-xs-12 col-sm-6">
-                  <img src={title} class="trailer" />
-                </div>
+        <div className="col-xs-12">
+          {/* <!-- Start Page --> */}
+          <Row>
+            <section id="FormatProjectPage" class="header">
+              <h1>Love Hunt</h1>
+            </section>
+          </Row>
 
-
-                {/* <!-- About --> */}
-                <div class="col-xs-12 col-sm-6">
-                  <section id="FormatProjectPage" class="header">
-                    <h1>About the Game</h1>
-                    <div class="bodytext about-game">
-                      Love Hunt is a game about a human magician (the tricks and mirrors kind) that stumbles their way into Creature Academy, a school for human-eating monsters. You must desguise yourself as a Witch to blend in until Halloween night. Armed with only the best cheap tricks your magic kit has to offer, will you find surivie long enough to find true love?
-                    </div>
-                  </section>
-
-                  {/* <!-- Download Link --> */}
-                  <iframe frameborder="0" src="https://itch.io/embed/445242?bg_color=593470&amp;border_color=593470" width="208" height="167"></iframe>
-                  <div class="download"></div>
-                </div>
-
-                {/* <!-- Role(s) --> */}
-                <div class="col-xs-12 col-sm-4">
-                  <section id="FormatProjectPage" class="header">
-                    <h1>Role(s)</h1>
-                    <div class="text">Game Writing</div>
-                    <div class="text">Narrative Designer</div>
-                    <div class="text">Programmer</div>
-                  </section>
-                </div>
-
-                {/* <!-- Engine --> */}
-                <div class="col-xs-12 col-sm-4">
-                  <section id="FormatProjectPage" class="header">
-                    <h1>Engine</h1>
-                    <div class="text">Ren'Py</div>
-                  </section>
-                </div>
-
-                {/* <!-- Contributions --> */}
-                <div class="col-xs-12 col-sm-4">
-                  <section id="FormatProjectPage" class="header">
-                    <h1>Contributions</h1>
-                    <div class="text">Wrote all dialogue pertaining to the character Zoe</div>
-                    <div class="text">Wrote end of day dialogue</div>
-                    <div class="text">Assisted in overall charcter creation and overall story</div>
-                  </section>
-                </div>
-
-                {/* <!-- About the Making --> */}
-                <div class="col-xs-12 col-sm-12">
-                  <section id="FormatProjectPage" class="header">
-                    <h1>About the Process</h1>
-                    <div class="bodytext about-making">
-                      Love Hunt was made in less than two days during the SIP Game Jam 2019 in a team of eight (three programmers/writers, one artist/writer, and four artists). Although visual novels/dating sims usually aren't the best type of game to make during a game jam, we were able to create a project I ended up very happy with. This was the first time I prioritized the writing the narrative over the programming in a game I've worked on, and I'm hoping I can do this more in the future.
-                    </div>
-                  </section>
-                </div>
-
-                {/* <!-- Screen Shots --> */}
-                <div class="row">
-                  <Carousel indicators={false}>
-                    <Carousel.Item>
-                      <img
-                        style={{ maxWidth: '75%' }}
-                        src={one}
-                        alt="First slide"
-                      />
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                      <img
-                        style={{ maxWidth: '75%' }}
-                        src={two}
-                        alt="Third slide"
-                      />
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                      <img
-                        style={{ maxWidth: '75%' }}
-                        src={three}
-                        alt="Third slide"
-                      />
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                      <img
-                        style={{ maxWidth: '75%' }}
-                        src={four}
-                        alt="Third slide"
-                      />
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                      <img
-                        style={{ maxWidth: '75%' }}
-                        src={five}
-                        alt="Third slide"
-                      />
-                    </Carousel.Item>
-                  </Carousel>
-                </div>
-              </div>
+          <Row>
+            {/* <!-- Trailer --> */}
+            <div class="col-xs-12 col-sm-6">
+              <Image src={title} class="trailer" />
             </div>
 
-            <Footer />
 
-          </div>
-        </body>
-      </html>
+            {/* <!-- About --> */}
+            <div class="col-xs-12 col-sm-6">
+              <section id="FormatProjectPage" class="header">
+                <h1>About the Game</h1>
+                <div class="bodytext about-game">
+                  Love Hunt is a game about a human magician (the tricks and mirrors kind) that stumbles their way into Creature Academy, a school for human-eating monsters. You must desguise yourself as a Witch to blend in until Halloween night. Armed with only the best cheap tricks your magic kit has to offer, will you find surivie long enough to find true love?
+                    </div>
+              </section>
+
+              {/* <!-- Download Link --> */}
+              <iframe frameBorder="0" src="https://itch.io/embed/445242?bg_color=593470&amp;border_color=593470" width="208" height="167"></iframe>
+              <div class="download"></div>
+            </div>
+          </Row>
+
+          <Row>
+            <CardDeck>
+              {/* <!-- Roles --> */}
+              <Card style={{ border: '1px solid rgba(0,0,0,0)', width: '40rem', backgroundColor: "rgba(0,0,0,0)" }}>
+                <Card.Body>
+                  <Card.Title>
+                    <section id="FormatProjectPage" className="header">
+                      <h1>Role</h1>
+                    </section></Card.Title>
+                  <Card.Text>
+                    <section id="FormatProjectPage" className="header">
+                      <div className="text"> - Game Writing</div>
+                      <div className="text"> - Narrative Design</div>
+                      <div className="text"> - Programming</div>
+                    </section>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              {/* <!-- Engine --> */}
+              <Card style={{ border: '1px solid rgba(0,0,0,0)', width: '40rem', backgroundColor: "rgba(0,0,0,0)" }}>
+                <Card.Body>
+                  <Card.Title>
+                    <section id="FormatProjectPage" className="header">
+                      <h1>Engine</h1>
+                    </section></Card.Title>
+                  <Card.Text>
+                    <section id="FormatProjectPage" className="header">
+                      <div className="text">Ren'Py</div>
+                    </section>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              {/* <!-- Contributions --> */}
+              <Card style={{ border: '1px solid rgba(0,0,0,0)', width: '40rem', backgroundColor: "rgba(0,0,0,0)" }}>
+                <Card.Body>
+                  <Card.Title>
+                    <section id="FormatProjectPage" className="header">
+                      <h1>Contributions</h1>
+                    </section></Card.Title>
+                  <Card.Text>
+                    <section id="FormatProjectPage" className="header">
+                      <div className="text"> - Wrote all dialogue pertaining to the character Zoe</div>
+                      <div className="text"> - Wrote end of day dialogue</div>
+                      <div className="text"> - Assisted in overall charcter creation and overall story</div>
+                    </section>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </CardDeck>
+          </Row>
+
+          {/* <!-- About the Making --> */}
+          <Row>
+            <Col xs={12} sm={12}>
+              <section id="FormatProjectPage" class="header">
+                <h1>About the Process</h1>
+                <div class="bodytext about-making">
+                  Love Hunt was made in less than two days during the SIP Game Jam 2019 in a team of eight (three programmers/writers, one artist/writer, and four artists). Although visual novels/dating sims usually aren't the best type of game to make during a game jam, we were able to create a project I ended up very happy with. This was the first time I prioritized the writing the narrative over the programming in a game I've worked on, and I'm hoping I can do this more in the future.
+                    </div>
+              </section>
+            </Col>
+          </Row>
+
+          {/* <!-- Screen Shots --> */}
+          <Row>
+            <Carousel indicators={false}>
+              <Carousel.Item>
+                <Image
+                  style={{ maxWidth: '75%' }}
+                  src={one}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  style={{ maxWidth: '75%' }}
+                  src={two}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  style={{ maxWidth: '75%' }}
+                  src={three}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  style={{ maxWidth: '75%' }}
+                  src={four}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <Image
+                  style={{ maxWidth: '75%' }}
+                  src={five}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Row>
+        </div>
+
+        <Footer />
+
+      </Container >
     );
   }
 }

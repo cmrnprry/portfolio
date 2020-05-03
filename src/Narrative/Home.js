@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../StyleSheets/Narrative.css'
-import '../StyleSheets/mystyle.css'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Image from 'react-bootstrap/Image'
+import { Helmet } from "react-helmet"
+
 import NavBar from './Nav_Narrative'
 import Footer from '../Both/Footer'
 import alice from '../Images/AliceecliA/AliceTitle.png';
@@ -15,131 +18,122 @@ class Home extends Component {
   render() {
 
     return (
-      <html>
-        <head>
+      <Container style={{ maxWidth: '1500px' }}>
+        <Helmet>
+          <meta charSet="utf-8" />
           <title>Projects</title>
-          <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' />
-          <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
-          <link rel="stylesheet" type="text/css" href="mystyle.css" />
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossOrigin="anonymous" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
+        </Helmet>
 
-        <body>
-          <div class="container">
+        {/* <!-- Header --> */}
+        <Row>
+          <Col xs={12} className="col-xs-12">
+            <section id="Title" className="titleText">Cam Perry</section>
+            <section id="Title" className="subtext">Narraative Designer and Writer</section>
+          </Col>
+        </Row>
 
-            {/* <!-- Header --> */}
-            <div class="row">
-              <div class="col-xs-12">
-                <section id="Title" className="titleText">Cam Perry</section>
-                <section id="Title" className="subtext">Narrative Designer and Writer</section>
-              </div>
-            </div>
+        <NavBar />
 
-            <NavBar />
-            
-            {/* <!--Programming Projects--> */}
-            <div class="row">
-              <div class="col-xs-12">
-                <h2 class="Projects">Projects</h2>
-                <div class="row">
+        {/* <!--Programming Projects--> */}
+        <Row>
+          <Col xs={12} className="col-xs-12">
+            <h2 className="Projects">Projects</h2>
+            <Row>
 
-                  {/* <!--Alice ecilA--> */}
-                  <div class="col-med-3 mx-auto">
-                    <div class="gallery">
-                      <a href="aa">
-                        <img src={alice} alt="AliceecilA" />
-                        <div class="overlay">
-                          <div class="hovertitle hover-padding"><b>Alice ecilA</b></div>
-                          <div class="hovertext">
-                            Narrative Design <br />
+              {/* <!--Alice ecilA--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="aa">
+                    <Image src={alice} alt="AliceecilA" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding"><b>Alice ecilA</b></div>
+                      <div className="hovertext">
+                        Narrative Design <br />
                             Game Writing <br />
                             Programming <br />
-                          </div>
-                        </div>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </Col>
 
-                  {/* <!--Absolute Unit--> */}
-                  <div class="col-med-3 mx-auto">
-                    <div class="gallery">
-                      <a href="au">
-                        <img src={au} alt="Absolute_Unit" />
-                        <div class="overlay">
-                          <div class="hovertitle hover-padding2"><b>Absolute Unit</b></div>
-                          <div class="hovertext">
-                            Game Writing <br />
+              {/* <!--Absolute Unit--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="au">
+                    <Image src={au} alt="Absolute_Unit" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding2"><b>Absolute Unit</b></div>
+                      <div className="hovertext">
+                        Game Writing <br />
                             Programming <br />
-                            Game Design                            
+                            Game Design
                           </div>
-                        </div>
-                      </a>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </Col>
 
-                  {/* <!--Love Hunt--> */}
-                  <div class="col-med-3 mx-auto">
-                    <div class="gallery">
-                      <a href="lh">
-                        <img src={lh} alt="Love_Hunt" />
-                        <div class="overlay">
-                          <div class="hovertitle hover-padding3"><b>Love Hunt</b></div>
-                          <div class="hovertext">
-                            Game Writing <br />
+              {/* <!--Love Hunt--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="lh">
+                    <Image src={lh} alt="Love_Hunt" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding3"><b>Love Hunt</b></div>
+                      <div className="hovertext">
+                        Game Writing <br />
                             Narrative Design <br />
-                          </div>
-                        </div>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </Col>
+            </Row>
 
-                  {/* <!--Greek Myth--> */}
-                  <div class="col-med-3 mx-auto">
-                    <div class="gallery">
-                      <a href="dl">
-                        <img src={dl} alt="Don't_Look" />
-                        <div class="overlay">
-                          <div class="hovertitle hover-padding3"><b>Don't Look</b></div>
-                          <div class="hovertext">
-                            Game Writing <br />
+            <Row>
+              {/* <!--Greek Myth--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="dl">
+                    <Image src={dl} alt="Don't_Look" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding3"><b>Don't Look</b></div>
+                      <div className="hovertext">
+                        Game Writing <br />
                             Narrative Design <br />
-                          </div>
-                        </div>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
+                </div>
+              </Col>
 
-                  {/* <!--Card Crossed Lovers--> */}
-                  <div class="col-med-3 mx-auto">
-                    <div class="gallery">
-                      <a href="ccl">
-                        <img src={ccl} alt="Card_Crossed_Lovers" />
-                        <div class="overlay">
-                          <div class="hovertitle hover-padding2">
-                            <b>Card Crossed Lovers</b>
-                          </div>
-                          <div class="hovertext">
-                            Programming <br />
+              {/* <!--Card Crossed Lovers--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="ccl">
+                    <Image src={ccl} alt="Card_Crossed_Lovers" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding2">
+                        <b>Card Crossed Lovers</b>
+                      </div>
+                      <div className="hovertext">
+                        Programming <br />
                             Game Writing
                           </div>
-                        </div>
-                      </a>
                     </div>
-                  </div>
+                  </a>
                 </div>
-              </div>
-            </div>
-          
-            <Footer />
-          
-          </div>
-        </body>
-      </html>
-        );
-    }
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+
+        <Footer />
+
+      </Container >
+    );
+  }
 }
-                                    
+
 export default Home;

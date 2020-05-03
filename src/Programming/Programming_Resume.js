@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../StyleSheets/mystyle.css'
-import '../StyleSheets/Narrative.css'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import { Helmet } from "react-helmet"
+
+
 import NavBar from './Nav_Programming'
 import Footer from '../Both/Footer'
 import resume from '../Docs/Games_Programming_Resume.pdf';
@@ -11,40 +14,28 @@ class Narrative_Resume extends Component {
   render() {
 
     return (
-      <html>
-        <head>
+      <Container style={{ maxWidth: '1500px' }}>
+        <Helmet>
+          <meta charSet="utf-8" />
           <title>Resume</title>
-          <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' />
-          <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
-          <link rel="stylesheet" type="text/css" href="mystyle.css" />
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </head>
+        </Helmet>
 
-        <body>
-          <div class="container">
+        <NavBar />
 
-            <NavBar />
-
-            {/* <!--Resume PDF viewer and download link--> */}
-            <div classs="row">
-              <div class="col-xs-12">
-                <h1 class="resume-text">
-                  If you can't view the pdf, <a href={resume} style={{ color: '#FFFFFF', textDecoration: 'underline' }}> here's a link!</a>
-                </h1>
-                <div class="embed-responsive embed-responsive-4by3">
-                  <embed class="embed-responsive-item" src={resume}></embed>
-                </div>
-              </div>
+        {/* <!--Resume PDF viewer and download link--> */}
+        <Row>
+          <Col xs={12} className="col-xs-12">
+            <h1 className="resume-text" style={{ padding: '25px' }}>
+              If you can't view the pdf, <a href={resume} target="_blank" style={{ color: '#FFFFFF', textDecoration: 'underline' }} rel="noopener noreferrer"> here's a link!</a>
+            </h1>
+            <div className="embed-responsive embed-responsive-4by3">
+              <embed className="embed-responsive-item" src={resume}></embed>
             </div>
+          </Col>
+        </Row>
 
-            <Footer />
-
-          </div>
-        </body>
-      </html>
+        <Footer />
+      </Container>
     );
   }
 }
