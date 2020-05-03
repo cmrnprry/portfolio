@@ -21,7 +21,7 @@ class Love_Hunt extends Component {
   render() {
 
     return (
-      <Container style={{ maxWidth: '1300px' }}>
+      <Container style={{ maxWidth: '1200px' }}>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Love Hunt</title>
