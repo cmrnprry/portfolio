@@ -18,28 +18,28 @@ class Footer extends Component {
         <Col xs={12} className="col-xs-12">
           <section id="Contact" style={{ paddingBottom: '15px' }} className="contactLinks">
             {/* <!--Email--> */}
-            <a href="mailto:perry.ca@husky.neu.edu" rel="noopener noreferrer">
-              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon="envelope" size="lg"/>
+            <a href="mailto:camperrygames@gmail.com" rel="noopener noreferrer">
+              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon="envelope" size="lg" />
             </a>
 
             {/* <!--LinkedIn--> */}
             <a target="_blank" href="https://www.linkedin.com/in/cameron-perry-015/" rel="noopener noreferrer">
-              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'linkedin']} size="lg"/>
+              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'linkedin']} size="lg" />
             </a>
 
             {/* <!--GitHub--> */}
             <a target="_blank" href="https://github.com/cmrnprry" rel="noopener noreferrer">
-              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'github-square']} size="lg"/>
+              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'github-square']} size="lg" />
             </a>
 
             {/* <!--Itch.io--> */}
             <a target="_blank" href="https://cmrnprry.itch.io/" rel="noopener noreferrer">
-              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'itch-io']} size="lg"/>
+              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'itch-io']} size="lg" />
             </a>
 
             {/* <!--Instagram--> */}
             <a target="_blank" href="https://www.instagram.com/n0t_cameron/" rel="noopener noreferrer">
-              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'instagram']} size="lg"/>
+              <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'instagram']} size="lg" />
             </a>
 
             {/* <!--Twitter-->
