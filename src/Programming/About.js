@@ -36,7 +36,7 @@ class AboutMe extends Component {
 
             <Col sm={6} xs={12} className="format">
               <p>
-                Thank you for visiting my website! I created the it from the ground up! My name is Cam and I am currently a student at Northeastern University, studying Computer Science and Game Development. I have been interested in games since high school. Since becoming a student at Northeastern, I have worked on a variety of games, mainly working as either a programmer (gameplay or UI/UX) or {' '}
+                Thank you for visiting my website! I created the it from the ground up! My name is Cam and I am currently a student at Northeastern University, studying Computer Science and Game Development. I have been interested in games since high school. Since becoming a student at Northeastern, I have worked on a variety of games, mainly working as either a programmer or {' '}
                 <OverlayTrigger
                   overlay=
                   {

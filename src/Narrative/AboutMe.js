@@ -45,7 +45,7 @@ class AboutMe extends Component {
                           </Tooltip>
                   } >
                   <a href="index" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>
-                    programmer (gameplay or UI/UX).
+                    programmer.
                         </a>
                 </OverlayTrigger>
               </p>

@@ -28,7 +28,7 @@ class Home extends Component {
         <Row>
           <Col xs={12} className="col-xs-12">
             <section id="Title" className="titleText">Cam Perry</section>
-            <section id="Title" className="subtext">Narraative Designer and Writer</section>
+            <section id="Title" className="subtext">Narative Designer and Writer</section>
           </Col>
         </Row>
 
@@ -39,6 +39,22 @@ class Home extends Component {
           <Col xs={12} className="col-xs-12">
             <h2 className="Projects">Projects</h2>
             <Row>
+
+              {/* <!--Out of CTRL--> */}
+              {/* <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="aa">
+                    <Image src={alice} alt="OutOfCTRL" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding"><b>Out of CTRL</b></div>
+                      <div className="hovertext">
+                        Narrative Design <br />
+                            Game Writing <br />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </Col> */}
 
               {/* <!--Alice ecilA--> */}
               <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
@@ -108,23 +124,7 @@ class Home extends Component {
                 </div>
               </Col>
 
-              {/* <!--Card Crossed Lovers--> */}
-              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
-                <div className="gallery">
-                  <a href="ccl">
-                    <Image src={ccl} alt="Card_Crossed_Lovers" />
-                    <div className="overlay">
-                      <div className="hovertitle hover-padding2">
-                        <b>Card Crossed Lovers</b>
-                      </div>
-                      <div className="hovertext">
-                        Programming <br />
-                            Game Writing
-                          </div>
-                    </div>
-                  </a>
-                </div>
-              </Col>
+
             </Row>
           </Col>
         </Row>
