@@ -11,7 +11,7 @@ import alice from '../Images/AliceecliA/AliceTitle.png';
 import au from '../Images/AU/title_card.png';
 import lh from '../Images/LH/lovehunt.png';
 import dl from '../Images/DL/title.png';
-import ccl from '../Images/CCL/CCL_Title.jpg';
+import outOfCTRL from '../Images/OutOfCTRL/outofCTRL.PNG';
 
 
 class Home extends Component {
@@ -41,10 +41,10 @@ class Home extends Component {
             <Row>
 
               {/* <!--Out of CTRL--> */}
-              {/* <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
                 <div className="gallery">
-                  <a href="aa">
-                    <Image src={alice} alt="OutOfCTRL" />
+                  <a href="out-of-ctrl">
+                    <Image src={outOfCTRL} alt="OutOfCTRL" />
                     <div className="overlay">
                       <div className="hovertitle hover-padding"><b>Out of CTRL</b></div>
                       <div className="hovertext">
@@ -54,7 +54,7 @@ class Home extends Component {
                     </div>
                   </a>
                 </div>
-              </Col> */}
+              </Col>
 
               {/* <!--Alice ecilA--> */}
               <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">

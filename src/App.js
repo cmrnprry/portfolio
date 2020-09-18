@@ -24,6 +24,7 @@ import Narrative_Resume from './Narrative/Narrative_Resume';
 import AA from './Narrative/AA';
 import CCL from './Narrative/CCL';
 import DL from './Narrative/DL';
+import OutofCTRL from './Narrative/OutofCTRL';
 
 class App extends Component {
   render() {
@@ -44,6 +45,7 @@ class App extends Component {
             <Route path="/aa" component={AA} exact={true} />
             <Route path="/ccl" component={CCL} exact={true} />
             <Route path="/dl" component={DL} exact={true} />
+            <Route path="/out-of-ctrl" component={OutofCTRL} exact={true} />
 
             {/* Programming */}
             <Route path="/index" component={Index} exact={true} />
