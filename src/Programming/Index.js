@@ -11,6 +11,8 @@ import alice from '../Images/AliceecliA/AliceTitle.png';
 import au from '../Images/AU/title_card.png';
 import ccl from '../Images/CCL/CCL_Title.jpg';
 import qos from '../Images/QOS/swords.png';
+import tamles from '../Images/Tamles/tamale_title.png';
+import phone from '../Images/Cosmic/title_cosmic.png';
 
 
 class Home extends Component {
@@ -38,6 +40,36 @@ class Home extends Component {
           <Col xs={12} className="col-xs-12">
             <h2 className="Projects">Projects</h2>
             <Row>
+
+              {/* <!--Cosmic Delights--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="cosmic-delights">
+                    <Image src={phone} alt="Cosmic" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding3"><b>Cosmic Delights</b></div>
+                      <div className="hovertext">
+                        Programming <br />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </Col>
+
+              {/* <!--Tamales: Con Familia--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="tamles-con-familia">
+                    <Image src={tamles} alt="Tamales" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding3"><b>Tamales: Con Familia</b></div>
+                      <div className="hovertext">
+                        Programming <br />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </Col>
 
               {/* <!--Alice ecilA--> */}
               <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
@@ -74,7 +106,7 @@ class Home extends Component {
               </Col>
 
               {/* <!--Card Crossed Lovers--> */}
-              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+              {/* <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
                 <div className="gallery">
                   <a href="card-crossed-lovers">
                     <Image src={ccl} alt="Card_Crossed_Lovers" />
@@ -89,12 +121,12 @@ class Home extends Component {
                     </div>
                   </a>
                 </div>
-              </Col>
+              </Col> */}
 
             </Row>
-            <Row>
-              {/* <!--Queen of Swords--> */}
-              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+            {/* <Row>
+              {/* <!--Queen of Swords--> 
+              {/* <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
                 <div className="gallery">
                   <a href="queen-of-swords">
                     <Image src={qos} alt="Queen_of_Swords" />
@@ -109,9 +141,9 @@ class Home extends Component {
                     </div>
                   </a>
                 </div>
-              </Col>
+              </Col> 
 
-            </Row>
+            </Row> */}
           </Col>
         </Row>
 

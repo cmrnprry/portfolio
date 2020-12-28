@@ -52,9 +52,9 @@ class AboutMe extends Component {
             </Col>
 
             <Col xs={12} className="format">
-              <p>
-                I was lucky enough to intern at Disruptor Beam this past summer as an engineering intern. While there I worked on Player Support Tools, hooking up the UI/UX art to the game and programming in gameplay elements. I worked on two games, one was Archer: Danger Phone and I can't talk about he other... Yet. In addtion to my internship, I have worked on a variety of games both in and out school. You can see more about them on the <a href="home" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>"Projects"</a> section of the page.
-                    </p>
+              <p style={{ paddingLeft: '10px', paddingRight: '10px' }}>
+                Most recently, I worked with Code Coven for their Summer Program. While there, I spent eleven weeks creating the game <a rel="noopener noreferrer" target="_blank" class="resumeLink" href="https://cmrnprry.itch.io/vampire-game">Work Sucks</a> (Which will be releasing soon!! Password: 'blood' is you want to play an older version), a rhythm RPG about Joe Vampire, and his quest to get his mug back. While creating Work Sucks, we had guidence from industy professionals, as well as our own personal mentors. I was also lucky enough to intern at Disruptor Beam a few summers ago as an engineering intern. While there I worked on Player Support Tools, hooking up the UI/UX art to the game and programming in gameplay elements. I worked on two games, one was <a rel="noopener noreferrer" target="_blank" class="resumeLink" href="https://www.archerdangerphone.com/">Archer: Danger Phone</a>.
+                </p>
 
               <p class="padding4">
                 Games play a huge role in my life, but they are not an all consuming part of my life. I also enjoy reading, painting (both water color and acrylic), baking and volunteering!

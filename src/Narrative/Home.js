@@ -12,6 +12,7 @@ import au from '../Images/AU/title_card.png';
 import lh from '../Images/LH/lovehunt.png';
 import dl from '../Images/DL/title.png';
 import outOfCTRL from '../Images/OutOfCTRL/outofCTRL.PNG';
+import date from '../Images/Date/title.png';
 
 
 class Home extends Component {
@@ -40,13 +41,29 @@ class Home extends Component {
             <h2 className="Projects">Projects</h2>
             <Row>
 
+              {/* <!--Date N' Dash--> */}
+              <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
+                <div className="gallery">
+                  <a href="date-n-dash">
+                    <Image src={date} alt="OutOfCTRL" />
+                    <div className="overlay">
+                      <div className="hovertitle hover-padding3"><b>Date N' Dash</b></div>
+                      <div className="hovertext">
+                        Narrative Design <br />
+                        Game Writing <br />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </Col>
+
               {/* <!--Out of CTRL--> */}
               <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
                 <div className="gallery">
                   <a href="out-of-ctrl">
                     <Image src={outOfCTRL} alt="OutOfCTRL" />
                     <div className="overlay">
-                      <div className="hovertitle hover-padding"><b>Out of CTRL</b></div>
+                      <div className="hovertitle hover-padding3"><b>Out of CTRL</b></div>
                       <div className="hovertext">
                         Narrative Design <br />
                             Game Writing <br />
@@ -107,8 +124,8 @@ class Home extends Component {
               </Col>
             </Row>
 
-            <Row>
-              {/* <!--Greek Myth--> */}
+            {/* <Row>
+              {/* <!--Greek Myth--> 
               <Col med={3} style={{ flexGrow: '0' }} className="col-med-3 mx-auto">
                 <div className="gallery">
                   <a href="dl">
@@ -125,7 +142,7 @@ class Home extends Component {
               </Col>
 
 
-            </Row>
+            </Row> */}
           </Col>
         </Row>
 

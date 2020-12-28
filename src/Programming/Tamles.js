@@ -8,19 +8,23 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import { Helmet } from "react-helmet"
 
-import NavBar from './Nav_Narrative'
+import NavBar from './Nav_Programming'
 import Footer from '../Both/Footer'
-import trailer from '../Images/AliceecliA/Alice_Prototype.mp4';
-import two from '../Images/OutOfCTRL/screencap_two.gif';
-import one from '../Images/OutOfCTRL/screencap_one.gif';
+import title from '../Images/Tamles/tamale_title.png';
+import four from '../Images/Tamles/screencap_four.png';
+import three from '../Images/Tamles/screencap_three.png';
+import two from '../Images/Tamles/screencap_two.png';
+import one from '../Images/Tamles/screencap_one.png';
 
-class OutOfCTRL extends Component {
+
+class Tamles extends Component {
     render() {
+
         return (
             <Container style={{ maxWidth: '1200px' }}>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Out of CTRL</title>
+                    <title>Tamales: Con Familia</title>
                 </Helmet>
 
                 <NavBar />
@@ -29,37 +33,29 @@ class OutOfCTRL extends Component {
 
                     <Row>
                         {/* <!-- Start Page --> */}
-                        <section id="FormatProjectPage" className="header">
-                            <h1>Out of CTRL</h1>
+                        <section id="FormatProjectPage" class="header">
+                            <h1>Tamales: Con Familia</h1>
                         </section>
                     </Row>
 
                     <Row>
                         {/* <!-- Trailer --> */}
                         <Col xs={12} sm={6}>
-                            <div style={{ width: 'auto', height: 'auto' }}>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RDJEwZe17V0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-
-                            <section id="FormatProjectPage" className="caption padding-slides" align="center">
-                                Trailer made by <a href="https://twitter.com/daichifob/" target="_blank" rel="noopener noreferrer" className="resumeLink">
-                                    Daichi
-                </a>
-                            </section>
-
+                            <Image src={title} style={{ height: '100%', width: '100%', paddingTop: '25px' }} />
                         </Col>
 
                         {/* <!-- About --> */}
                         <Col xs={12} sm={6}>
-                            <section id="FormatProjectPage" className="header">
+                            <section id="FormatProjectPage" class="header">
                                 <h1>About the Game</h1>
-                                <div className="bodytext about-game">
-                                    Have a conversation with an old computer. While the computer can type whatever it wants, the only way you can respond is by copy and pasting pieces of the text from previous parts of the conversation.
-                </div>
+                                <div class="bodytext about-game">
+                                    Play as a shy young child preparing tamales with their family. Listen in on the conversations of your mother, her sisters, and your grandmother. Touches on topics of loss and change. Takes place in US America with reminiscence of Mexico.
+                                </div>
                             </section>
 
                             {/* <!-- Download Link --> */}
-                            <iframe frameBorder="0" src="https://itch.io/embed/694019?bg_color=593470&amp;border_color=593470" width="208" height="167" title="downloadlink"></iframe>
+                            <iframe frameBorder="0" src="https://itch.io/embed/775242?bg_color=593470&amp;border_color=593470" width="208" height="167" />
+                            <div class="download"></div>
                         </Col>
                     </Row>
 
@@ -74,8 +70,7 @@ class OutOfCTRL extends Component {
                                         </section></Card.Title>
                                     <Card.Text>
                                         <section id="FormatProjectPage" className="header">
-                                            <div className="text"> - Narrative Design</div>
-                                            <div className="text"> - Game Writing</div>
+                                            <div className="text"> - Programming</div>
                                         </section>
                                     </Card.Text>
                                 </Card.Body>
@@ -105,9 +100,8 @@ class OutOfCTRL extends Component {
                                         </section></Card.Title>
                                     <Card.Text>
                                         <section id="FormatProjectPage" className="header">
-                                            <div className="text"> - Wrote all dialogue and text</div>
-                                            <div className="text"> - Designed dialogue in a way that responses to the player made sense without the need for context</div>
-                                            <div className="text"> - Collaborated with a voice actor to add more life to character dialgoue</div>
+                                            <div class="text"> - Scripted tamale making gameplay</div>
+                                            <div class="text"> - Imported art assets and animations</div>
                                         </section>
                                     </Card.Text>
                                 </Card.Body>
@@ -118,22 +112,21 @@ class OutOfCTRL extends Component {
                     <Row>
                         {/* <!-- About the Making --> */}
                         <Col xs={12} sm={12}>
-                            <section id="FormatProjectPage" className="header">
+                            <section id="FormatProjectPage" class="header">
                                 <h1>About the Process</h1>
-                                <div className="bodytext about-making">
-                                    Out of CTRL was made for the 2020 GMTK Jam. I was brought onto the team a bit late, as I had originally not been participating in the jam, but when the idea was presented to me, I <i>had</i> to work on it. This was my first project where I worked as the only writer, and had no hand in the coding. It was different, but I really enjoyed working on this. The team is planning to release a version that is more responsive to the player in the future!
+                                <div class="bodytext about-making">
+                                    Tamales: Con Familia was a game that was made because our writer, <a rel="noopener noreferrer" target="_blank" class="resumeLink" href="https://www.samanthaivonne.com/">Samantha Ortiz</a> had an idea for a game for the Hispanic Heritage Month jam. The main focus of the game is the narrative, which can be read in either English or Spanish, while having simple, repetative gameplay as secondary. Tamales: Con Familia was Unidos Online Game Jam Finalist for art, audio and narrative.
                                 </div>
                             </section>
                         </Col>
                     </Row>
 
-                    {/* <!-- Screen Shots --> */}
                     <Row>
+                        {/* <!-- Screen Shots --> */}
                         <Carousel indicators={false}>
                             <Carousel.Item>
                                 <Image
-                                    style={{ maxWidth: '50%' }}
-                                    className="d-block w-100"
+                                    className="d-block"
                                     src={one}
                                     alt="First slide"
                                 />
@@ -141,9 +134,24 @@ class OutOfCTRL extends Component {
 
                             <Carousel.Item>
                                 <Image
-                                    style={{ maxWidth: '50%' }}
-                                    className="d-block w-100"
+                                    className="d-block"
                                     src={two}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+
+                            <Carousel.Item>
+                                <Image
+                                    className="d-block"
+                                    src={three}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+
+                            <Carousel.Item>
+                                <Image
+                                    className="d-block"
+                                    src={four}
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
@@ -152,8 +160,10 @@ class OutOfCTRL extends Component {
                 </div>
 
                 <Footer />
+
             </Container >
         );
     }
 }
-export default OutOfCTRL;
+
+export default Tamles;

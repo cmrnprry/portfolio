@@ -10,56 +10,51 @@ import { Helmet } from "react-helmet"
 
 import NavBar from './Nav_Narrative'
 import Footer from '../Both/Footer'
-import trailer from '../Images/AliceecliA/Alice_Prototype.mp4';
-import two from '../Images/OutOfCTRL/screencap_two.gif';
-import one from '../Images/OutOfCTRL/screencap_one.gif';
+import four from '../Images/Date/screencap_four.png';
+import three from '../Images/Date/screencap_three.png';
+import two from '../Images/Date/screencap_two.png';
+import one from '../Images/Date/screencap_one.png';
+import title from '../Images/Date/title.png';
 
-class OutOfCTRL extends Component {
+class Date extends Component {
     render() {
+
         return (
             <Container style={{ maxWidth: '1200px' }}>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Out of CTRL</title>
+                    <title>Date N' Dash</title>
                 </Helmet>
 
                 <NavBar />
 
                 <div className="col-xs-12">
-
                     <Row>
                         {/* <!-- Start Page --> */}
-                        <section id="FormatProjectPage" className="header">
-                            <h1>Out of CTRL</h1>
+                        <section id="FormatProjectPage" class="header">
+                            <h1>Date N' Dash</h1>
                         </section>
                     </Row>
 
                     <Row>
                         {/* <!-- Trailer --> */}
                         <Col xs={12} sm={6}>
-                            <div style={{ width: 'auto', height: 'auto' }}>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RDJEwZe17V0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-
-                            <section id="FormatProjectPage" className="caption padding-slides" align="center">
-                                Trailer made by <a href="https://twitter.com/daichifob/" target="_blank" rel="noopener noreferrer" className="resumeLink">
-                                    Daichi
-                </a>
-                            </section>
-
+                            <img src={title} class="trailer" />
                         </Col>
+
 
                         {/* <!-- About --> */}
                         <Col xs={12} sm={6}>
-                            <section id="FormatProjectPage" className="header">
+                            <section id="FormatProjectPage" class="header">
                                 <h1>About the Game</h1>
-                                <div className="bodytext about-game">
-                                    Have a conversation with an old computer. While the computer can type whatever it wants, the only way you can respond is by copy and pasting pieces of the text from previous parts of the conversation.
-                </div>
+                                <div class="bodytext about-game">
+                                    Play as Lyla, a confident firefighter who finally has a day off.  You bump into a cute girl, or rather she bumps into you, on your way to your local café.  Will the two of you hit off? Or will you get your heart broken?
+                                </div>
                             </section>
 
                             {/* <!-- Download Link --> */}
-                            <iframe frameBorder="0" src="https://itch.io/embed/694019?bg_color=593470&amp;border_color=593470" width="208" height="167" title="downloadlink"></iframe>
+                            <iframe frameborder="0" src="https://itch.io/embed/805509?bg_color=593470&amp;border_color=593470" width="208" height="167"></iframe>
+                            <div class="download"></div>
                         </Col>
                     </Row>
 
@@ -105,9 +100,10 @@ class OutOfCTRL extends Component {
                                         </section></Card.Title>
                                     <Card.Text>
                                         <section id="FormatProjectPage" className="header">
-                                            <div className="text"> - Wrote all dialogue and text</div>
-                                            <div className="text"> - Designed dialogue in a way that responses to the player made sense without the need for context</div>
-                                            <div className="text"> - Collaborated with a voice actor to add more life to character dialgoue</div>
+                                            <div className="text"> - Collaborated with another writer to come up with overall narrative</div>
+                                            <div className="text"> - Wrote narrative for days two, three and parts of five</div>
+                                            <div className="text"> - Wrote narrative for two of four possible endings</div>
+                                            <div className="text"> - Translated the script to work with the Ink Plugin for Unity</div>
                                         </section>
                                     </Card.Text>
                                 </Card.Body>
@@ -117,14 +113,14 @@ class OutOfCTRL extends Component {
 
                     <Row>
                         {/* <!-- About the Making --> */}
-                        <Col xs={12} sm={12}>
-                            <section id="FormatProjectPage" className="header">
+                        <div class="col-xs-12 col-sm-12">
+                            <section id="FormatProjectPage" class="header">
                                 <h1>About the Process</h1>
-                                <div className="bodytext about-making">
-                                    Out of CTRL was made for the 2020 GMTK Jam. I was brought onto the team a bit late, as I had originally not been participating in the jam, but when the idea was presented to me, I <i>had</i> to work on it. This was my first project where I worked as the only writer, and had no hand in the coding. It was different, but I really enjoyed working on this. The team is planning to release a version that is more responsive to the player in the future!
+                                <div class="bodytext about-making">
+                                    Made for the Jam-O-Lanutrn Game Jam 2020, Date N' Dash was made when someone posed the question: "What if a dating sim, but everytime you died it got <i>faster?"</i> This led the team to creating a Groundhog Day-esc dating sim that was really fun to create. The team managed to finish the game before the end of the jam with a script that was 69 pages long, eleven different music tracks and some voice acting!
                                 </div>
                             </section>
-                        </Col>
+                        </div>
                     </Row>
 
                     {/* <!-- Screen Shots --> */}
@@ -132,8 +128,7 @@ class OutOfCTRL extends Component {
                         <Carousel indicators={false}>
                             <Carousel.Item>
                                 <Image
-                                    style={{ maxWidth: '50%' }}
-                                    className="d-block w-100"
+                                    style={{ maxWidth: '75%' }}
                                     src={one}
                                     alt="First slide"
                                 />
@@ -141,9 +136,24 @@ class OutOfCTRL extends Component {
 
                             <Carousel.Item>
                                 <Image
-                                    style={{ maxWidth: '50%' }}
-                                    className="d-block w-100"
+                                    style={{ maxWidth: '75%' }}
                                     src={two}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+
+                            <Carousel.Item>
+                                <Image
+                                    style={{ maxWidth: '75%' }}
+                                    src={three}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+
+                            <Carousel.Item>
+                                <Image
+                                    style={{ maxWidth: '75%' }}
+                                    src={four}
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
@@ -156,4 +166,5 @@ class OutOfCTRL extends Component {
         );
     }
 }
-export default OutOfCTRL;
+
+export default Date;

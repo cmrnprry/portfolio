@@ -38,9 +38,9 @@ class Footer extends Component {
             </a>
 
             {/* <!--Instagram--> */}
-            <a target="_blank" href="https://www.instagram.com/n0t_cameron/" rel="noopener noreferrer">
+            {/* <a target="_blank" href="https://www.instagram.com/n0t_cameron/" rel="noopener noreferrer">
               <FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'instagram']} size="lg" />
-            </a>
+            </a> */}
 
             {/* <!--Twitter-->
                 <a target="_blank" href="https://twitter.com/n0t_cameron" style={{ color: "#FFFFFF", textDecoration: 'none', padding: '10px' }} className="fab fa-twitter" rel="noopener noreferrer"></a> */}

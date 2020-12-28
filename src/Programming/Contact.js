@@ -66,9 +66,9 @@ class ContactMe extends Component {
 								</a>
 
 								{/* <!--Instagram--> */}
-								<a target="_blank" href="https://www.instagram.com/n0t_cameron/" rel="noopener noreferrer">
+								{/* <a target="_blank" href="https://www.instagram.com/n0t_cameron/" rel="noopener noreferrer">
 									<FontAwesomeIcon style={{ color: "#FFFFFF", textDecoration: 'none', marginLeft: '25px' }} icon={['fab', 'instagram']} size="lg" />
-								</a>
+								</a> */}
 							</section>
 						</Row>
 					</Col>
